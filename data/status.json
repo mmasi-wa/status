@@ -1,0 +1,713 @@
+{
+ "updated": "2026-11-24T17:18:40.217Z",
+ "sources": {
+  "sentinelone": {
+   "name": "SentinelOne",
+   "link": "https://status.sentinelone.com",
+   "status": "operational",
+   "components": [
+    {
+     "id": "wx4l44crf984",
+     "name": "Platform Features / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "qrth3xf2g42j",
+     "name": "AI SIEM (Data) / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "byc0brb083qr",
+     "name": "Singularity Threat Services / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "9dhw42kd6plp",
+     "name": "Endpoint Security / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "gl1445rjh05c",
+     "name": "Cloud Security / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "22cccwknmr5y",
+     "name": "Singularity Operations Center and Management Console / USA (NA1)",
+     "status": "operational"
+    },
+    {
+     "id": "rbs9yv05y864",
+     "name": "Endpoint Security / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "qbw97q03vw79",
+     "name": "Singularity Threat Services / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "jprqg999pq9w",
+     "name": "Singularity Operations Center and Management Console / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "tq74lmxzkrm7",
+     "name": "AI SIEM (Data) / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "dymttsr8y7qj",
+     "name": "Platform Features / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "qxv8xrvgqhmh",
+     "name": "Cloud Security / USA (NA4)",
+     "status": "operational"
+    },
+    {
+     "id": "jxv9d2kvs8rq",
+     "name": "Platform Features / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "qvn45rtn7z1w",
+     "name": "Singularity Threat Services / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "c29vy3yvtr99",
+     "name": "Cloud Security / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "h1pl6xt682rz",
+     "name": "Endpoint Security / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "6f400th414dh",
+     "name": "AI SIEM (Data) / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "2x9lm14th1qh",
+     "name": "Singularity Operations Center and Management Console / Canada (NA3)",
+     "status": "operational"
+    },
+    {
+     "id": "5r8nksg6md0g",
+     "name": "Platform Features / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "mvbbdc0bf4lg",
+     "name": "AI SIEM (Data) / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "rrt7ffl08v51",
+     "name": "Singularity Threat Services / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "wdnjsd2z8p7d",
+     "name": "Cloud Security / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "qd80nkbl1bjy",
+     "name": "Endpoint Security / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "n3lbc2kxbp90",
+     "name": "Singularity Operations Center and Management Console / Germany (EU1)",
+     "status": "operational"
+    },
+    {
+     "id": "8q8n57svvdd6",
+     "name": "Platform Features / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "yx3kk3hz22kz",
+     "name": "Cloud Security / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "b6tdk08sqtvb",
+     "name": "Singularity Threat Services / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "l0vh5l8jnp5j",
+     "name": "AI SIEM (Data) / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "5k7y1f4wscx9",
+     "name": "Endpoint Security / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "pw2h5th72g7m",
+     "name": "Singularity Operations Center and Management Console / Germany (EU2)",
+     "status": "operational"
+    },
+    {
+     "id": "8dcbfjj81h0n",
+     "name": "Platform Features / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "g52ws5j8hjw1",
+     "name": "AI SIEM (Data) / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "2cdkhvyj772k",
+     "name": "Singularity Threat Services / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "23gwqd8vg9zf",
+     "name": "Cloud Security / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "jcf2dw1lmwzh",
+     "name": "Endpoint Security / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "qhdwk4fm5kzd",
+     "name": "Singularity Operations Center and Management Console / Singapore (AP1)",
+     "status": "operational"
+    },
+    {
+     "id": "1j4gb9yv3xbh",
+     "name": "Platform Features / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "byh98h3msbhl",
+     "name": "Singularity Threat Services / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "vbgzzsh881xp",
+     "name": "Cloud Security / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "vmcs41gc8kgr",
+     "name": "AI SIEM (Data) / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "h2s4k1hy1drp",
+     "name": "Endpoint Security / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "9vft6hlgbzhz",
+     "name": "Singularity Operations Center and Management Console / Australia (AP2)",
+     "status": "operational"
+    },
+    {
+     "id": "cwx8yc78fd45",
+     "name": "Platform Features / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "vt7srzgw0dgy",
+     "name": "AI SIEM (Data) / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "w68lj3pw6wrg",
+     "name": "Singularity Threat Services / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "1jvx7r8fxptn",
+     "name": "Endpoint Security / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "lpftdp1fk0hm",
+     "name": "Cloud Security / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "58cgw32v4b6n",
+     "name": "Singularity Operations Center and Management Console / India (AP3)",
+     "status": "operational"
+    },
+    {
+     "id": "bz6q9h84yx84",
+     "name": "Singularity Operations Center and Management Console / KSA (ME1)",
+     "status": "operational"
+    },
+    {
+     "id": "lw4ll0g9nyb2",
+     "name": "Singularity Threat Services / KSA (ME1)",
+     "status": "operational"
+    },
+    {
+     "id": "hfcstpb6rpbk",
+     "name": "Platform Features / KSA (ME1)",
+     "status": "operational"
+    },
+    {
+     "id": "ps5fdlyr1456",
+     "name": "AI SIEM (Data) / KSA (ME1)",
+     "status": "operational"
+    },
+    {
+     "id": "1wfwtrtr7zn9",
+     "name": "Endpoint Security / KSA (ME1)",
+     "status": "operational"
+    },
+    {
+     "id": "893d4x2g2h43",
+     "name": "Cloud Security / KSA (ME1)",
+     "status": "operational"
+    }
+   ],
+   "incidents": [],
+   "detail": "All monitored components operational",
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "zoom": {
+   "name": "Zoom Phone & Meetings (NA)",
+   "link": "https://www.zoomstatus.com",
+   "status": "operational",
+   "components": [
+    {
+     "id": "3z7b6jks10hm",
+     "name": "Zoom Meetings / Zoom Meetings",
+     "status": "operational"
+    },
+    {
+     "id": "jh6w5p8b9yv9",
+     "name": "Zoom Phone - NORTH AMERICA / Zoom Phone",
+     "status": "operational"
+    },
+    {
+     "id": "c0vx53f3d6v5",
+     "name": "Zoom Phone - Global / Web Portal (Admin/Users/Provisioning/Dashboard & Reporting)",
+     "status": "operational"
+    },
+    {
+     "id": "yh2t02zm6fhq",
+     "name": "Zoom Phone - NORTH AMERICA / Calling (Inbound/Outbound)",
+     "status": "operational"
+    },
+    {
+     "id": "jpbprc44q8dm",
+     "name": "Zoom Phone - Global / Third Party Contact Center Integration (Five9/Twilio/Talkdesk/inContact/Genesys)",
+     "status": "operational"
+    },
+    {
+     "id": "5vvw5njz8qg5",
+     "name": "Zoom Phone - NORTH AMERICA / SMS/MMS (Inbound/Outbound)",
+     "status": "operational"
+    },
+    {
+     "id": "c5zk1r6jjm22",
+     "name": "Zoom Phone - Global / Integration (API/Webhook)",
+     "status": "operational"
+    },
+    {
+     "id": "0s4rj3lf1rpx",
+     "name": "Zoom Phone - NORTH AMERICA / Devices (Softphones/Deskphones)",
+     "status": "operational"
+    },
+    {
+     "id": "x63vf0zt5bxw",
+     "name": "Zoom Phone - Global / Cisco Rooms registered to Zoom Phone",
+     "status": "operational"
+    },
+    {
+     "id": "rryv3x03gshj",
+     "name": "Zoom Meetings / In-Meeting Chat/Polling",
+     "status": "operational"
+    },
+    {
+     "id": "1hghqg91w5zf",
+     "name": "Zoom Phone - NORTH AMERICA / BYOC - Premises",
+     "status": "operational"
+    },
+    {
+     "id": "zw4xrrx3nhyl",
+     "name": "Zoom Phone - Global / Polycom Rooms registered to Zoom Phone",
+     "status": "operational"
+    },
+    {
+     "id": "0h08kcybkm9y",
+     "name": "Zoom Phone - NORTH AMERICA / Provider Exchange",
+     "status": "operational"
+    },
+    {
+     "id": "q8chr9lrz757",
+     "name": "Zoom Phone - Global / Calling (Inbound/Outbound)",
+     "status": "operational"
+    },
+    {
+     "id": "y5ryrz3d2f5n",
+     "name": "Zoom Phone - NORTH AMERICA / Emergency Calling",
+     "status": "operational"
+    },
+    {
+     "id": "jl5y2tlw4yqf",
+     "name": "Zoom Phone - Global / Zoom Phone Node Service",
+     "status": "operational"
+    },
+    {
+     "id": "1v74zmrq81fr",
+     "name": "Zoom Meetings / Archiving",
+     "status": "operational"
+    },
+    {
+     "id": "7t0r1gywtg50",
+     "name": "Zoom Phone - NORTH AMERICA / Recording Service",
+     "status": "operational"
+    },
+    {
+     "id": "x3krzfpb1khb",
+     "name": "Zoom Phone - Global / SMS",
+     "status": "operational"
+    },
+    {
+     "id": "8vtcg8np4n8c",
+     "name": "Zoom Meetings / Live Transcription",
+     "status": "operational"
+    },
+    {
+     "id": "zhvj07hl7z83",
+     "name": "Zoom Phone - Global / Zoom AIC",
+     "status": "operational"
+    },
+    {
+     "id": "v3f87m80cz52",
+     "name": "Zoom Phone - NORTH AMERICA / Hardware Phone",
+     "status": "operational"
+    },
+    {
+     "id": "ytpvvb8n0s31",
+     "name": "Zoom Meetings / Closed Captioning",
+     "status": "operational"
+    },
+    {
+     "id": "nwhdl9ct08pc",
+     "name": "Zoom Phone - Global / PSTN",
+     "status": "operational"
+    },
+    {
+     "id": "16l56szqxl1m",
+     "name": "Zoom Phone - NORTH AMERICA / PCI Integration",
+     "status": "operational"
+    },
+    {
+     "id": "c110sm47tmwf",
+     "name": "Zoom Phone - Global / Voicemail/Recording/Call Log",
+     "status": "operational"
+    },
+    {
+     "id": "rhmrtnvc7xrt",
+     "name": "Zoom Meetings / Live Streaming",
+     "status": "operational"
+    },
+    {
+     "id": "0842bncf5q9f",
+     "name": "Zoom Phone - Global / Zoom Phone",
+     "status": "operational"
+    },
+    {
+     "id": "ntdt65v1f9rv",
+     "name": "Zoom Meetings / Meeting Dial-in/Telephony",
+     "status": "operational"
+    },
+    {
+     "id": "5xglgm6kl1dk",
+     "name": "Zoom Phone - Global / Devices (Softphones/Deskphones)",
+     "status": "operational"
+    },
+    {
+     "id": "3ml2fn8g0psv",
+     "name": "Zoom Meetings / Zoom Conference Room Connector",
+     "status": "operational"
+    },
+    {
+     "id": "kvrj9x7kgp2b",
+     "name": "Zoom Phone - Global / Transcription",
+     "status": "operational"
+    },
+    {
+     "id": "gkx8x46kw77h",
+     "name": "Zoom Meetings / Recording",
+     "status": "operational"
+    },
+    {
+     "id": "97j86xk8dflw",
+     "name": "Zoom Phone - Global / PCI Integration",
+     "status": "operational"
+    },
+    {
+     "id": "tj58619r2mcm",
+     "name": "Zoom Meetings / Zoom Meeting Invite",
+     "status": "operational"
+    },
+    {
+     "id": "slryp41hcm02",
+     "name": "Zoom Meetings / SIP Connected Audio (SCA)",
+     "status": "operational"
+    },
+    {
+     "id": "812f2g41379j",
+     "name": "Zoom Meetings / Zoom for Intune",
+     "status": "operational"
+    },
+    {
+     "id": "q4msk5dl4bhm",
+     "name": "Zoom Meetings / Zoom Webinars",
+     "status": "operational"
+    },
+    {
+     "id": "rsh1v3gbhtsy",
+     "name": "Zoom Meetings / Zoom AI",
+     "status": "operational"
+    },
+    {
+     "id": "9qv6bp63zynp",
+     "name": "Zoom Meetings / SMS (Send meeting invite via SMS)",
+     "status": "operational"
+    },
+    {
+     "id": "gxlzmzd2yp2y",
+     "name": "Zoom Meetings / PSTN",
+     "status": "operational"
+    },
+    {
+     "id": "6qtv0w61s12m",
+     "name": "Zoom Meetings / Meeting Dial-out/Telephony",
+     "status": "operational"
+    },
+    {
+     "id": "mnvw31bd360b",
+     "name": "Zoom Meetings / AI Image Generation",
+     "status": "operational"
+    },
+    {
+     "id": "y2j8tr9wxv49",
+     "name": "Zoom Meetings / Real Time Media Streams (RTMS)",
+     "status": "operational"
+    },
+    {
+     "id": "dsq3xl6t7s21",
+     "name": "Zoom Meetings / Zoom Webinars Plus and Events",
+     "status": "operational"
+    }
+   ],
+   "incidents": [],
+   "detail": "All monitored components operational",
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "cox": {
+   "name": "Dealertrack & Xtime",
+   "link": "https://coxautoapi.statuspage.io",
+   "status": "operational",
+   "components": [
+    {
+     "id": "1y4r7nzwkssp",
+     "name": "Xtime / Service Marketing",
+     "status": "operational"
+    },
+    {
+     "id": "dhdx586j55nv",
+     "name": "Digital Retailing / Dealertrack Credit Application",
+     "status": "operational"
+    },
+    {
+     "id": "g2pd592mz0m9",
+     "name": "Xtime / Service Scheduling",
+     "status": "operational"
+    },
+    {
+     "id": "md5nw97cl0rf",
+     "name": "Digital Retailing / Dealertrack Leads",
+     "status": "operational"
+    },
+    {
+     "id": "9qbgzksgz5tl",
+     "name": "Xtime / Service Catalog",
+     "status": "operational"
+    },
+    {
+     "id": "j7ksb55h3gzt",
+     "name": "Xtime / Consumer Media Events - oAuthPurposeOnly - 1.x",
+     "status": "operational"
+    },
+    {
+     "id": "kxm8glmqqgqh",
+     "name": "Digital Retailing / Dealertrack Dealer Lender Information",
+     "status": "operational"
+    },
+    {
+     "id": "jsqxqrhtvrld",
+     "name": "Xtime / Xtime Logi Retail Reporting Federated Authorization - 1.x",
+     "status": "operational"
+    },
+    {
+     "id": "pmmjbmnwmcq5",
+     "name": "Digital Retailing / Dealertrack Leads V2 - 1.x",
+     "status": "operational"
+    },
+    {
+     "id": "ldrp2dx31zkq",
+     "name": "Digital Retailing / Dealertrack Credit Application V2 - 1.x",
+     "status": "operational"
+    },
+    {
+     "id": "hjdwqdjbv6rc",
+     "name": "Digital Retailing / Dealertrack Dealer Lender Information V2 - 1.x",
+     "status": "operational"
+    }
+   ],
+   "incidents": [],
+   "detail": "All monitored components operational",
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "cdk": {
+   "name": "CDK Unify",
+   "link": "https://launch.cdkunify.com/",
+   "status": "operational",
+   "detail": "Page loads, no down banner",
+   "incidents": [],
+   "components": [],
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "meraki": {
+   "name": "Meraki (NA)",
+   "link": "https://status.meraki.net",
+   "status": "unknown",
+   "detail": "Can't read this page: No components matched the include/exclude filter",
+   "incidents": [],
+   "components": [],
+   "fails": 1,
+   "error": "No components matched the include/exclude filter",
+   "badStreak": 1,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "google": {
+   "name": "Google Workspace",
+   "link": "https://www.google.com/appsstatus/dashboard/",
+   "status": "operational",
+   "components": [],
+   "incidents": [],
+   "detail": "No open incidents",
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "kaseya": {
+   "name": "Kaseya VSA X & BMS (NA)",
+   "link": "https://status.kaseya.com",
+   "status": "operational",
+   "components": [
+    {
+     "id": "q8ysq84lb3lj",
+     "name": "BMS / US",
+     "status": "operational"
+    },
+    {
+     "id": "dz8gyp10v1r8",
+     "name": "VSA X / US",
+     "status": "operational"
+    },
+    {
+     "id": "fs1nc7hjqr8k",
+     "name": "VSA X / US - Andromeda10",
+     "status": "operational"
+    },
+    {
+     "id": "h9lg71j4zzpk",
+     "name": "VSA X / Integration Services",
+     "status": "operational"
+    },
+    {
+     "id": "k9fdv7zxd1vs",
+     "name": "VSA X / License Management",
+     "status": "operational"
+    },
+    {
+     "id": "vscfp92974jh",
+     "name": "VSA X / US - Remote Control",
+     "status": "operational"
+    },
+    {
+     "id": "bygh2ztpzggp",
+     "name": "VSA X / Software Catalog",
+     "status": "operational"
+    }
+   ],
+   "incidents": [
+    {
+     "title": "Scheduled Maintenance – Cloud Target Appliance Upgrades",
+     "update": "Maintenance in progress",
+     "url": "https://stspg.io/0wtj6ljx0lm6",
+     "at": "2026-11-24T08:00:09.574-05:00"
+    }
+   ],
+   "detail": "All monitored components operational",
+   "fails": 0,
+   "error": null,
+   "badStreak": 0,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  },
+  "origence": {
+   "name": "Origence (NA)",
+   "link": "https://status.origence.com/#/",
+   "status": "unknown",
+   "detail": "Can't read this page: HTTP 404",
+   "incidents": [],
+   "components": [],
+   "fails": 1,
+   "error": "HTTP 404",
+   "badStreak": 1,
+   "alerting": false,
+   "lastChange": "2026-11-24T17:18:40.217Z",
+   "checked": "2026-11-24T17:18:40.217Z"
+  }
+ }
+}
