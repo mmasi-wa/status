@@ -1,0 +1,39 @@
+{
+  "alertTo": "mmasi+status@winnerauto.com",
+  "alertFrom": "Winner Status <onboarding@resend.dev>",
+  "failuresBeforeAlert": 2,
+  "sources": [
+    { "id": "sentinelone", "name": "SentinelOne", "type": "statuspage",
+      "url": "https://status.sentinelone.com", "link": "https://status.sentinelone.com" },
+
+    { "id": "zoom", "name": "Zoom Phone & Meetings (NA)", "type": "statuspage",
+      "url": "https://www.zoomstatus.com", "link": "https://www.zoomstatus.com",
+      "include": "Zoom (Phone|Meetings)",
+      "exclude": "EMEA|APAC|Europe|Asia|Australia|Latin|LATAM|India|Japan|Singapore|China" },
+
+    { "id": "cox", "name": "Dealertrack & Xtime", "type": "statuspage",
+      "url": "https://coxautoapi.statuspage.io", "link": "https://coxautoapi.statuspage.io",
+      "include": "Dealertrack|Xtime" },
+
+    { "id": "cdk", "name": "CDK Unify", "type": "pageload",
+      "url": "https://launch.cdkunify.com/", "link": "https://launch.cdkunify.com/",
+      "downPattern": "temporarily unavailable|service unavailable|experiencing (an )?(outage|issues)|system (is )?down" },
+
+    { "id": "meraki", "name": "Meraki (NA)", "type": "statuspage",
+      "url": "https://status.meraki.net", "link": "https://status.meraki.net",
+      "include": "North America|Americas|\\bNA\\b|\\bUS\\b" },
+
+    { "id": "google", "name": "Google Workspace", "type": "googleworkspace",
+      "url": "https://www.google.com/appsstatus/dashboard/incidents.json",
+      "link": "https://www.google.com/appsstatus/dashboard/" },
+
+    { "id": "kaseya", "name": "Kaseya VSA X & BMS (NA)", "type": "statuspage",
+      "url": "https://status.kaseya.com", "link": "https://status.kaseya.com",
+      "include": "VSA ?X|BMS",
+      "exclude": "EMEA|APAC|Europe|Asia|Australia|\\bEU\\b|\\bAU\\b|\\bUK\\b" },
+
+    { "id": "origence", "name": "Origence (NA)", "type": "statuspage",
+      "url": "https://status.origence.com", "link": "https://status.origence.com/#/",
+      "include": "North America|Americas|\\bNA\\b|\\bUS\\b" }
+  ]
+}

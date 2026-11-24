@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winner Systems Status</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f3f5f4;--panel:#fff;--ink:#16222b;--mute:#5d6b75;--line:#dde3e1;
+--ok:#1f8a5b;--warn:#c27a00;--bad:#c4372c;--info:#2d6cdf;--unk:#7a8791}
+@media (prefers-color-scheme:dark){:root{--bg:#10181e;--panel:#18232b;--ink:#e8eef0;--mute:#93a3ad;--line:#273640;
+--ok:#3ecf8e;--warn:#f0b03a;--bad:#ff6b5e;--info:#6aa0ff;--unk:#8b9aa4}}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 60px}
+h1{font:700 26px "Bricolage Grotesque",system-ui,sans-serif;margin:0}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.meta{color:var(--mute);font-size:13px}
+.banner{border-radius:10px;padding:18px 20px;color:#fff;font:700 22px "Bricolage Grotesque",system-ui,sans-serif;margin-bottom:22px}
+.banner small{display:block;font:400 14px "IBM Plex Sans",system-ui,sans-serif;opacity:.92;margin-top:2px}
+.banner.ok{background:var(--ok)}.banner.warn{background:var(--warn)}.banner.bad{background:var(--bad)}.banner.stale{background:var(--unk)}
+@media (prefers-color-scheme:dark){.banner{color:#0b1216}}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+details{border-top:1px solid var(--line)}details:first-child{border-top:0}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:12px 1fr auto;gap:14px;align-items:center;padding:14px 18px}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:color-mix(in srgb,var(--ink) 4%,transparent)}
+summary:focus-visible{outline:2px solid var(--info);outline-offset:-2px}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--unk)}
+.s-operational .dot{background:var(--ok)}.s-maintenance .dot{background:var(--info)}
+.s-degraded .dot{background:var(--warn)}.s-partial .dot,.s-major .dot{background:var(--bad)}
+.name{font-weight:500}.detail{color:var(--mute);font-size:13px}
+.state{font-size:13px;font-weight:500;text-align:right}
+.s-operational .state{color:var(--ok)}.s-maintenance .state{color:var(--info)}.s-degraded .state{color:var(--warn)}
+.s-partial .state,.s-major .state{color:var(--bad)}.s-unknown .state{color:var(--unk)}
+.since{display:block;color:var(--mute);font-weight:400}
+.body{padding:2px 18px 16px 44px;font-size:14px}
+.body a{color:var(--info)}
+.inc{margin:8px 0;padding:10px 12px;border-left:3px solid var(--bad);background:color-mix(in srgb,var(--bad) 8%,transparent);border-radius:0 6px 6px 0}
+.inc b{display:block}.comp{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed var(--line)}
+.comp span:last-child{color:var(--mute)}
+.empty{padding:30px;text-align:center;color:var(--mute)}
+@media (prefers-reduced-motion:no-preference){.dot{transition:background .3s}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><h1>Winner Systems Status</h1><div class="meta" id="meta">Loading…</div></div>
+  <div id="banner"></div>
+  <div class="list" id="list"><div class="empty">Loading status…</div></div>
+</main>
+<script>
+const LABEL={operational:'Operational',maintenance:'Maintenance',degraded:'Degraded',partial:'Partial outage',major:'Major outage',unknown:"Can't read"};
+const SEV={major:4,partial:3,degraded:2,unknown:2,maintenance:1,operational:0};
+const STALE_MIN=50, REFRESH_MS=60000;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ago=t=>{const m=Math.round((Date.now()-new Date(t))/60000);if(m<1)return 'just now';if(m<60)return m+' min ago';
+  const h=Math.round(m/60);return h<24?h+' hr ago':Math.round(h/24)+' d ago'};
+let openIds=new Set();
+
+async function load(){
+  try{
+    const r=await fetch('data/status.json?t='+Date.now(),{cache:'no-store'});
+    render(await r.json());
+  }catch(e){document.getElementById('meta').textContent='Could not load data';}
+}
+function render(d){
+  const items=Object.entries(d.sources||{}).map(([id,s])=>({id,...s}));
+  if(!d.updated||!items.length){document.getElementById('list').innerHTML='<div class="empty">No data yet. Run the "Check statuses" workflow once in GitHub Actions.</div>';return;}
+  items.sort((a,b)=>SEV[b.status]-SEV[a.status]||a.name.localeCompare(b.name));
+  const stale=(Date.now()-new Date(d.updated))/60000>STALE_MIN;
+  const bad=items.filter(i=>SEV[i.status]>=2);
+  const worst=Math.max(...items.map(i=>SEV[i.status]));
+  const b=document.getElementById('banner');
+  if(stale){b.innerHTML='<div class="banner stale">Data may be out of date<small>Last successful check was '+ago(d.updated)+'. Check the GitHub Actions run.</small></div>';}
+  else if(!bad.length){b.innerHTML='<div class="banner ok">All systems operational<small>'+items.length+' services monitored</small></div>';}
+  else{b.innerHTML='<div class="banner '+(worst>=3?'bad':'warn')+'">'+bad.length+' of '+items.length+' services have issues<small>'+esc(bad.map(i=>i.name).join(', '))+'</small></div>';}
+  document.getElementById('meta').textContent='Checked '+ago(d.updated)+' · refreshes every minute';
+  document.getElementById('list').innerHTML=items.map(i=>{
+    const inc=(i.incidents||[]).map(x=>`<div class="inc"><b>${esc(x.title)}</b>${esc((x.update||'').slice(0,300))}${x.url?` <a href="${esc(x.url)}" target="_blank" rel="noopener">Details</a>`:''}</div>`).join('');
+    const bad=(i.components||[]).filter(c=>c.status!=='operational');
+    const comps=(bad.length?bad:[]).map(c=>`<div class="comp"><span>${esc(c.name)}</span><span>${LABEL[c.status]||c.status}</span></div>`).join('');
+    const ok=(i.components||[]).length-bad.length;
+    return `<details data-id="${i.id}" class="s-${i.status}" ${openIds.has(i.id)||SEV[i.status]>=2?'open':''}>
+      <summary><span class="dot"></span><span><span class="name">${esc(i.name)}</span><br><span class="detail">${esc(i.detail)}</span></span>
+      <span class="state">${LABEL[i.status]||i.status}<span class="since">since ${ago(i.lastChange)}</span></span></summary>
+      <div class="body">${inc}${comps}${ok>0?`<div class="detail" style="margin:6px 0">${ok} other component(s) operational</div>`:''}
+      <a href="${esc(i.link)}" target="_blank" rel="noopener">Open status page</a></div></details>`;
+  }).join('');
+  document.querySelectorAll('details').forEach(el=>el.addEventListener('toggle',()=>{el.open?openIds.add(el.dataset.id):openIds.delete(el.dataset.id)}));
+}
+load();setInterval(load,REFRESH_MS);
+</script>
+</body>
+</html>
