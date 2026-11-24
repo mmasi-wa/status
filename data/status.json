@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:56:21.366Z",
+ "updated": "2026-11-24T22:51:49.974Z",
  "sources": {
   "sentinelone": {
    "name": "SentinelOne",
@@ -284,7 +284,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "zoom": {
    "name": "Zoom Phone & Meetings (NA)",
@@ -524,7 +524,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "cox": {
    "name": "Dealertrack & Xtime",
@@ -594,7 +594,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "cdk": {
    "name": "CDK Unify",
@@ -608,7 +608,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "meraki": {
    "name": "Meraki (NA)",
@@ -617,12 +617,12 @@
    "detail": "Can't read this page: No components matched the include/exclude filter",
    "incidents": [],
    "components": [],
-   "fails": 6,
+   "fails": 7,
    "error": "No components matched the include/exclude filter",
-   "badStreak": 6,
+   "badStreak": 7,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "google": {
    "name": "Google Workspace",
@@ -636,7 +636,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "kaseya": {
    "name": "Kaseya VSA X & BMS (NA)",
@@ -681,18 +681,6 @@
    ],
    "incidents": [
     {
-     "title": "PSA - 2026.6.3 Minor Release - UK01, UK02, UK03, UKLR01, EU1",
-     "update": "Maintenance in progress",
-     "url": "https://stspg.io/qcspgq1qrpvc",
-     "at": "2026-11-24T15:01:08.279-05:00"
-    },
-    {
-     "title": "PSA - 2026.6.3 - PSA Minor Release - German (Deutsch)",
-     "update": "Maintenance in progress",
-     "url": "https://stspg.io/b302l8ybqtqs",
-     "at": "2026-11-24T15:00:07.690-05:00"
-    },
-    {
      "title": "Scheduled Maintenance – Cloud Target Appliance Upgrades",
      "update": "Maintenance in progress",
      "url": "https://stspg.io/0wtj6ljx0lm6",
@@ -705,7 +693,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   },
   "origence": {
    "name": "Origence (NA)",
@@ -714,12 +702,12 @@
    "detail": "Can't read this page: HTTP 404",
    "incidents": [],
    "components": [],
-   "fails": 6,
+   "fails": 7,
    "error": "HTTP 404",
-   "badStreak": 6,
+   "badStreak": 7,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-24T21:56:21.366Z"
+   "checked": "2026-11-24T22:51:49.974Z"
   }
  }
 }
