@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:46:58.672Z",
+ "updated": "2026-11-25T14:03:15.871Z",
  "sources": {
   "sentinelone": {
    "name": "SentinelOne",
@@ -284,7 +284,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "zoom": {
    "name": "Zoom Phone & Meetings (NA)",
@@ -524,7 +524,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "cox": {
    "name": "Dealertrack & Xtime",
@@ -594,7 +594,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "cdk": {
    "name": "CDK Unify",
@@ -608,7 +608,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "meraki": {
    "name": "Meraki (NA)",
@@ -617,12 +617,12 @@
    "detail": "Can't read this page: No components matched the include/exclude filter",
    "incidents": [],
    "components": [],
-   "fails": 20,
+   "fails": 21,
    "error": "No components matched the include/exclude filter",
-   "badStreak": 20,
+   "badStreak": 21,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "google": {
    "name": "Google Workspace",
@@ -636,7 +636,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "kaseya": {
    "name": "Kaseya VSA X & BMS (NA)",
@@ -679,14 +679,27 @@
      "status": "operational"
     }
    ],
-   "incidents": [],
+   "incidents": [
+    {
+     "title": "Scheduled Maintenance – Cloud Target Appliance Upgrades",
+     "update": "Maintenance in progress",
+     "url": "https://stspg.io/50bl9g0sx25g",
+     "at": "2026-11-25T08:01:08.597-05:00"
+    },
+    {
+     "title": "PSA - 2026.6.3 Minor Release - AU01, AU02, AU03, AU04",
+     "update": "Maintenance in progress",
+     "url": "https://stspg.io/8dddhxxyk7jn",
+     "at": "2026-11-25T08:00:13.533-05:00"
+    }
+   ],
    "detail": "All monitored components operational",
    "fails": 0,
    "error": null,
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   },
   "origence": {
    "name": "Origence (NA)",
@@ -695,12 +708,12 @@
    "detail": "Can't read this page: HTTP 404",
    "incidents": [],
    "components": [],
-   "fails": 20,
+   "fails": 21,
    "error": "HTTP 404",
-   "badStreak": 20,
+   "badStreak": 21,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-25T12:46:58.672Z"
+   "checked": "2026-11-25T14:03:15.871Z"
   }
  }
 }
