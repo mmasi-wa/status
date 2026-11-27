@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T20:34:13.914Z",
+ "updated": "2026-11-27T21:31:41.458Z",
  "sources": {
   "sentinelone": {
    "name": "SentinelOne",
@@ -284,7 +284,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "zoom": {
    "name": "Zoom Phone & Meetings (NA)",
@@ -531,7 +531,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "cox": {
    "name": "Dealertrack & Xtime",
@@ -601,7 +601,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "cdk": {
    "name": "CDK Unify",
@@ -615,7 +615,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "meraki": {
    "name": "Meraki (NA)",
@@ -624,12 +624,12 @@
    "detail": "Can't read this page: No components matched the include/exclude filter",
    "incidents": [],
    "components": [],
-   "fails": 74,
+   "fails": 75,
    "error": "No components matched the include/exclude filter",
-   "badStreak": 74,
+   "badStreak": 75,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "google": {
    "name": "Google Workspace",
@@ -643,7 +643,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "kaseya": {
    "name": "Kaseya VSA X & BMS (NA)",
@@ -700,7 +700,7 @@
    "badStreak": 0,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   },
   "origence": {
    "name": "Origence (NA)",
@@ -709,12 +709,12 @@
    "detail": "Can't read this page: HTTP 404",
    "incidents": [],
    "components": [],
-   "fails": 74,
+   "fails": 75,
    "error": "HTTP 404",
-   "badStreak": 74,
+   "badStreak": 75,
    "alerting": false,
    "lastChange": "2026-11-24T17:18:40.217Z",
-   "checked": "2026-11-27T20:34:13.914Z"
+   "checked": "2026-11-27T21:31:41.458Z"
   }
  }
 }
